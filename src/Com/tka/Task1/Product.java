@@ -8,10 +8,11 @@ public class Product {
 	private String productdate;
 	private String productexpdate;
 	
-	public Product() {
-
+	public Product(int id, String name, int qty, double price, String mfgdate, int expDate) {
+		
 	}
 
+	
 	public Product(int productid, String productName, int productQty, double productprice, String productdate,
 			String productexpdate) {
 		super();
@@ -22,6 +23,7 @@ public class Product {
 		this.productdate = productdate;
 		this.productexpdate = productexpdate;
 	}
+
 
 	public int getProductid() {
 		return productid;
@@ -77,6 +79,8 @@ public class Product {
 				+ ", productprice=" + productprice + ", productdate=" + productdate + ", productexpdate="
 				+ productexpdate + "]";
 	}
+
+	
 	
 	
 
